@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 project(example)
+set(CMAKE_CXX_STANDARD 20)
 
 
 file(GLOB HEADER_FILES ${PROJECT_SOURCE_DIR}/*.h)

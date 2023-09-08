@@ -1,0 +1,10 @@
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/google.svg
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/facebook.svg
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/apple.svg
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/steam.svg
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/xbox.svg
+https://eaassets-a.akamaihd.net/resource_signin_ea_com/551.0.20230817.661.974bc46/p/images/psn.svg
+
+
+$ xargs -n 1 curl -O < svg.txt 
+$ ls *.svg | head | xargs -I {} inkscape -h 26 -w 26 {} -o $(basename {} .svg).png
